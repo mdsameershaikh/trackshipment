@@ -1,0 +1,54 @@
+
+
+
+
+<div class="ds" *ngIf="progressData" >
+   <p class="pd">DELIVERY AT</p>
+   <p class="D8">{{city}}, {{pincode}}</p>
+</div>
+<div *ngIf="progressData" class="high">
+<a href="{{shipment.track_url}}" target="_blank">
+
+  <span > {{shipment.tracking_no}}</span>
+
+</a>
+</div>
+<div class="space">
+  <div class="twotime">
+
+    <div *ngFor="let s of status ;let i = index">
+
+      <div *ngIf="s.state" class="ontop">
+        <span style="color:orange;font-weight:bold">{{s.title}}</span>
+        <img [src]="orange">
+      </div>
+
+      <div *ngIf="!s.state" class="rowthe">
+        <span class="bar" *ngIf="(i != s.length-1)"></span>
+          <div class="ontop">
+            <span style="color:grey">{{s.title}}</span>
+            <img [src]="grey">
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+
+
+
+
+<div *ngFor="let p of progressData">
+
+  <div class="col" *ngIf="!p.is_current">
+    <span>> {{p.status}}</span>
+    <span> {{p.time}}</span>
+  </div>
+  <div class="coll" *ngIf="p.is_current">
+    <span>> {{p.status}}</span>
+    <span> {{p.time}}</span>
+  </div>
+</div>

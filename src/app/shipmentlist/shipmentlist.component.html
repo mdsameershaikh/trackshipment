@@ -1,0 +1,20 @@
+<div class="cbs">
+    <div class="cba">
+        <div class="boxshipment" *ngFor="let d of responseData" (click)="consoleIt(d.shipment_id)"
+            (click)="emitNewShipment()">
+            <img [src]="d.image">
+            <div class="text">
+                <span>{{d.shipment_id}}</span>
+                <div class="arrow">
+                    <span>></span>
+                </div>
+                <span>{{d.status}}</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="margin">
+        <app-orderprogress [clickedShipment]="clickedShipment"></app-orderprogress>
+    </div>
+
+</div>

@@ -1,0 +1,49 @@
+.boxshipment{
+background-color: rgb(228, 255, 255);
+display: flex;
+width: 500px;
+flex-direction: row;
+border-bottom: 1.5px solid #ececec;
+}
+
+img{
+    height: 130px;
+    margin-left: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;   
+}
+
+
+.text{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-left: 10px;
+}
+
+.arrow{
+display: flex;
+justify-content: flex-end;
+margin-left: 330px;
+align-items: flex-end;    
+}
+
+
+.cbs{
+ display: flex;
+ flex-direction: row; 
+
+
+}
+
+.cba{
+ display: flex;
+ flex-direction:   column;   
+ 
+}
+
+.margin{
+ margin-left: 10px; 
+ 
+ border-right: 5px rgb(230, 74, 74);
+}
