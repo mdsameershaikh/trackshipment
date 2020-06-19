@@ -1,0 +1,113 @@
+
+h1{
+    font-weight: 900;  
+    font-family: Montserrat,sans-serif;
+    font-size: 36px;
+    -webkit-font-smoothing: antialiased;
+    }
+    
+    
+    .home{
+        background: linear-gradient(180deg,#e7f6f4,#cae9e6);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 80px;
+        margin-right: 80px;
+        
+    
+    }
+    
+    .mail{
+    height: 500px;   
+    }
+    
+    .fowas{
+    height: 100px;
+    
+        
+    }
+    
+    .logo{
+     display: flex;
+     align-items: center;
+     justify-content: space-between; 
+     margin-top: 100px;
+     margin-bottom: 100px;  
+    }
+    
+    
+    .btn{
+     background-color: #00abaa;
+     border-radius: 3px; 
+     font-weight: 100;
+     padding-top: 5px;
+     padding-right: 5px;
+     padding-left: 5px;
+     padding-bottom: 5px;
+     margin-top: 10px;
+     font-weight: 600; 
+     font-size: 15px; 
+    font-family: Montserrat,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    
+    
+    }
+    
+    .ib{
+     display: flex;
+     flex-direction: column;
+     border-radius: 10px;  
+     margin-top: 50px;
+     margin-bottom: 20px;
+     
+    
+    }
+    
+    .i{
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-left: 45px;
+        padding-bottom: 5px;
+        margin-top: 10px; 
+    }
+       
+    
+    .fsp{
+     margin-left: 25px;   
+     margin-right: 25px;
+    }
+    
+    .whimoi{
+     color: #00abaa;
+     font-weight: 100;
+     margin-bottom: 100px;
+     font-family: Montserrat,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    }
+       
+    
+    h2{
+    font-weight: 900;  
+    font-family: Montserrat,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    }
+    
+    .marginit{
+     
+     margin-right: 200px;  
+     margin-left: 200px; 
+     border-left: grey;
+    }
+
+
+    .full{
+background-color:black;
+height: 20px;
+border-radius: 3px;
+
+
+    }

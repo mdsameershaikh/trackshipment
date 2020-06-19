@@ -8,17 +8,26 @@ import { ShipmentlistComponent } from './shipmentlist/shipmentlist.component';
 import { from } from 'rxjs';
 import { OrderdataService } from './orderdata.service';
 import { OrderprogressComponent } from './orderprogress/orderprogress.component';
+import { RouterModule, Routes } from '@angular/router';
+import { OrderTrackingComponent } from './order-tracking/order-tracking.component';
+import { HomeComponent } from './home/home.component';
 
-
+const appRoutes: Routes = [
+  {path: 'order-tracking/:order_id', component: OrderTrackingComponent},
+  {path: '', component: HomeComponent}
+]
 
 @NgModule({
   declarations: [
     AppComponent,
     ShipmentlistComponent,
-    OrderprogressComponent
+    OrderprogressComponent,
+    OrderTrackingComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot(appRoutes),
     HttpClientModule,
     AppRoutingModule,
     FormsModule

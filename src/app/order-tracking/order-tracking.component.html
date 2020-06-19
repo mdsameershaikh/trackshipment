@@ -1,0 +1,25 @@
+<div class="section">
+ <div class="border">
+    <div class="myButton">
+        <div class="space">
+            <input [(ngModel)]="orderid" placeholder="ENTER ORDER ID">
+            <button class="btn" (click)="showShipments(orderid)"> TRACK ORDER </button></div>
+    </div>
+</div>
+    <div class="left">
+
+        <app-shipmentlist *ngIf="responseData" [orderid]="orderid" [responseData]="responseData"></app-shipmentlist>
+
+
+        <!--     This should shou ur shipment list       -->
+    </div>
+
+    <!-- <div class ="right">
+
+        Selected Shipment Details will be shown here
+    </div>
+
+
+
+
+</div> -->

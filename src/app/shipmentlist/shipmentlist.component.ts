@@ -14,14 +14,17 @@ clickedShipment = 0
   constructor() { }
 
   ngOnInit(): void {
+
+
+    //manually call consoleIt function to display data on right side
+    this.onShipmentClicked(this.responseData[0].shipment_id);
   }
 
-consoleIt(d){
+  onShipmentClicked(d){
    this.clickedShipment = d;
- 
+   this.newShipment.emit(this.clickedShipment)
+
 }
 
-emitNewShipment(){
-  this.newShipment.emit(this.clickedShipment)
-}
+
 }

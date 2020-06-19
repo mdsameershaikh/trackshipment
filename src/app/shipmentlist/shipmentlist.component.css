@@ -1,7 +1,7 @@
 .boxshipment{
 background-color: rgb(228, 255, 255);
 display: flex;
-width: 500px;
+width: 550px;
 flex-direction: row;
 border-bottom: 1.5px solid #ececec;
 }
@@ -24,10 +24,14 @@ margin-left: 10px;
 .arrow{
 display: flex;
 justify-content: flex-end;
-margin-left: 330px;
+margin-left: 400px;
 align-items: flex-end;    
 }
 
+.selected {
+    background-image: linear-gradient(rgb(228, 255, 255),white, rgb(228, 255, 255));
+   font-weight: 600;
+}
 
 .cbs{
  display: flex;
@@ -47,3 +51,4 @@ align-items: flex-end;
  
  border-right: 5px rgb(230, 74, 74);
 }
+

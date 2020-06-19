@@ -1,0 +1,38 @@
+<div class="home" *ngIf="value">
+    <h1>Where is my order?</h1>
+    <div class="ib">
+      <input class="i" [(ngModel)]="orderid" placeholder="ENTER ORDER ID"> 
+        <button class="btn" (click)="showShipments(orderid)" (click)="myLoad()"> TRACK ORDER </button>
+      
+        <img *ngIf="loading" class="full"  [src]="l">
+  
+    </div>
+    <span class="whimoi" (click)="orderSearch()"> where is my Order id?</span>
+  
+    <div *ngIf="orderGuide"> <img src="https://rj-cdn.fynd.com/rpublic/imgs/inst_mob.png" class="mail"></div>
+  
+    <h2>Live track your orders from</h2>
+    <div class="logo">
+      <a href="https://www.fynd.com/" target="_blank">
+        <img class="fowas" [src]="f">
+      </a>
+      <div class="fsp">
+        <a href="https://www.fynd.com/" target="_blank">
+          <img class="fowas" [src]="fs">
+        </a>
+      </div>
+      <div class="fssp">
+        <a href="https://www.fynd.com/" target="_blank">
+          <img class="fowas" [src]="u">
+        </a>
+      </div>
+    </div>
+    <img class="fowas" [src]="d">
+  </div>
+
+  
+  <!-- <div class="marginit"  >
+    <app-shipmentlist [orderid]="orderid" [responseData]="responseData" (newShipment)='capShipment($event)' >
+    </app-shipmentlist>
+  </div> -->
+ 

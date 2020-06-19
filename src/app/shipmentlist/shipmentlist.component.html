@@ -1,14 +1,14 @@
 <div class="cbs">
     <div class="cba">
-        <div class="boxshipment" *ngFor="let d of responseData" (click)="consoleIt(d.shipment_id)"
-            (click)="emitNewShipment()">
+        <div class="boxshipment" [ngClass]="d.shipment_id == clickedShipment ? 'selected' : 'normal'" *ngFor="let d of responseData" (click)="onShipmentClicked(d.shipment_id)"
+            >
             <img [src]="d.image">
             <div class="text">
-                <span>{{d.shipment_id}}</span>
+                <span> Shipment_id: {{d.shipment_id}}</span>
                 <div class="arrow">
                     <span>></span>
                 </div>
-                <span>{{d.status}}</span>
+                <span>Status: {{d.status}}</span>
             </div>
 
         </div>
@@ -18,3 +18,5 @@
     </div>
 
 </div>
+ 
+
